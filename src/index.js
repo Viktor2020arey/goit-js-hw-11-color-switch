@@ -1,4 +1,2 @@
-import colors from './colorsItems';
+import './colorsSwitch.js';
 import './styles.css';
-
-console.log(colors);

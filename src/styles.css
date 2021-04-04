@@ -1,1 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  padding-top: 200px;
+  text-align: center;
+}
+
+button {
+  font-size: 30px;
+  padding: 25px;
+  margin: 30px;
+
+  border: #212121;
+
+  color: #503794;
+  cursor: pointer;
+}
