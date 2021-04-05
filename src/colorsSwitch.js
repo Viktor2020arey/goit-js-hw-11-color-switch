@@ -1,4 +1,11 @@
-import colors from './colorsItems.js';
+const colors = [
+  '#FFFFFF',
+  '#2196F3',
+  '#4CAF50',
+  '#FF9800',
+  '#009688',
+  '#795548',
+];
 
 const refs = {
   body: document.querySelector('body'),
@@ -9,6 +16,7 @@ const refs = {
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
+
 let intervalId;
 
 refs.startBtn.addEventListener('click', startButtonClicker);
@@ -23,13 +31,10 @@ function startButtonClicker() {
   refs.startBtn.disabled = true;
   intervalId = setInterval(() => {
     changeBackgroundColor(colors);
-    console.log(3);
   }, 1000);
-  console.log(1);
 }
 
 function stopButtonClicker() {
   refs.startBtn.disabled = false;
   clearInterval(intervalId);
-  console.log(2);
 }
